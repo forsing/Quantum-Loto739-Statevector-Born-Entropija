@@ -19,7 +19,7 @@ import numpy as np
 from qiskit import QuantumCircuit
 from qiskit.quantum_info import Statevector
 
-CSV_PATH = Path("/Users/4c/Desktop/GHQ/data/loto7hh_4600_k31.csv")
+CSV_PATH = Path("/data/loto7hh_4600_k31.csv")
 
 
 def load_rows(path: Path) -> np.ndarray:
@@ -259,27 +259,27 @@ q_pure5 (pet modela u ovom fajlu): redova iz CSV = 4600 | agregacija mean..max p
 M6 mean(ce CSV)→Ry + CNOT lanac
   qubit-a: 7 | entropija (bit): 3.312762 | max p: 0.24824 | argmax indeks: 80
   <Z_i>: (1.0, 0.87114, 0.44445, 0.00246, -0.00122, 0.00106, -0.00106)
-  predikcija 4601: (10, 18, 21, 22, 24, 27, 29)
+  predikcija 4601: (10, 18, x, y, z, 27, 29)
 ---
 M7 std(ce CSV)→Ry + cirk. CNOT
   qubit-a: 7 | entropija (bit): 2.285896 | max p: 0.394962 | argmax indeks: 107
   <Z_i>: (-0.07749, -0.33696, 0.32508, -0.32508, 0.30086, -0.07637, -0.07637)
-  predikcija 4601: (3, 5, 6, 20, 25, 26, 36)
+  predikcija 4601: (3, 5, x, y, z, 26, 36)
 ---
 M8 median(ce CSV)→amp + H^3
   qubit-a: 3 | entropija (bit): 1.787174 | max p: 0.636816 | argmax indeks: 4
   <Z_i>: (0.57463, 0.39801, -0.699)
-  predikcija 4601: (3, 6, 16, 21, 27, 30, 33)
+  predikcija 4601: (3, 6, x, y, z, 30, 33)
 ---
 M9 min(ce CSV)→Ry + RZZ
   qubit-a: 7 | entropija (bit): 3.063383 | max p: 0.301674 | argmax indeks: 96
   <Z_i>: (1.0, 0.95949, 0.84125, 0.41542, 0.14231, -0.65486, -1.0)
-  predikcija 4601: (2, 6, 17, 21, 24, 30, 33)
+  predikcija 4601: (2, 6, x, y, z, 30, 33)
 ---
 M10 max(ce CSV)→amp + QFT
   qubit-a: 3 | entropija (bit): 0.940343 | max p: 0.865953 | argmax indeks: 0
   <Z_i>: (0.83267, 0.84536, 0.85106)
-  predikcija 4601: (16, 18, 20, 21, 24, 32, 37)
+  predikcija 4601: (16, 18, x, y, z, 32, 37)
 """
 
 
